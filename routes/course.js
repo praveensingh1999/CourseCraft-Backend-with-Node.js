@@ -53,7 +53,7 @@ import {
 // ================================
 // Course Progress Controller
 // ================================
-import { updateCourseProgress } from "../controllers/courseProgress.js"
+import { updateCourseProgress } from "../controllers/courseprogress.js"
 
 // ================================
 // Middlewares

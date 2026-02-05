@@ -7,11 +7,11 @@ import dotenv from "dotenv";
 import { connectDB } from "./config/database.js"; // ✅ Named import
 import { cloudinaryConnect } from "./config/cloudinary.js";
 
-import userRoutes from "./routes/User.js";
-import profileRoutes from "./routes/Profile.js";
+import userRoutes from "./routes/user.js";
+import profileRoutes from "./routes/profile.js";
 import paymentRoutes from "./routes/payment.js";
 import courseRoutes from "./routes/course.js";
-import contactUsRoute from "./routes/Contact.js";
+import contactUsRoute from "./routes/contact.js";
 
 dotenv.config();
 

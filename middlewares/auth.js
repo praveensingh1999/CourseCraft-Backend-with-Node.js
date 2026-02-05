@@ -18,7 +18,7 @@ export const auth = async (req, res, next) => {
 			req.cookies?.token ||
 			req.body?.token ||
 			req.header("Authorization")?.replace("Bearer ", "");
-      console.log('inside auth', token);
+     // console.log('inside auth', token);
 
 		// If JWT is missing, return 401 Unauthorized response
 		if (!token) {

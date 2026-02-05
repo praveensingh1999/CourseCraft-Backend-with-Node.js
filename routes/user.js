@@ -9,7 +9,7 @@ import {
   signup,
   sendotp,
   changePassword,
-} from "../controllers/Auth.js"
+} from "../controllers/auth.js"
 
 import {
   resetPasswordToken,
