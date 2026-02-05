@@ -65,7 +65,7 @@ export const paymentSuccessEmail = (name, amount, orderId, paymentId) => {
 
 <body>
     <div class="container">
-        <a href="https://coursecraft-edtech-project.vercel.app">
+        <a href="https://course-craft-frontend-in-react-js.vercel.app">
             <img class="logo" src="../../resource/logo.jpg" alt="Course Craft Logo">
         </a>
         <div class="message">Course Payment Confirmation || Course Craft</div>

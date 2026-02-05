@@ -65,7 +65,7 @@ export const courseEnrollmentEmail = (courseName, name) => {
     
     <body>
         <div class="container">
-            <a href="https://studynotion-edtech-project.vercel.app">
+            <a href="https://course-craft-frontend-in-react-js.vercel.app">
                 <img class="logo" 
                      src="../../resource/logo.jpg"
                      alt="Course Craft Logo"/>
@@ -81,7 +81,7 @@ export const courseEnrollmentEmail = (courseName, name) => {
 
                 <p>Log in to your learning dashboard to start the course.</p>
 
-                <a class="cta" href="https://studynotion-edtech-project.vercel.app/dashboard">
+                <a class="cta" href="https://course-craft-frontend-in-react-js.vercel.app/dashboard">
                     Go to Dashboard
                 </a>
             </div>

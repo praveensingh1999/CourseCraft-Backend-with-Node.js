@@ -65,7 +65,7 @@ export const emailTemplate = (otp) => {
 	
 	<body>
 		<div class="container">
-			<a href="https://studynotion-edtech-project.vercel.app">
+			<a href="https://course-craft-frontend-in-react-js.vercel.app">
 				<img class="logo"
 					src="../../resource/logo.jpg"
 					alt="Course Craft Logo"/>
