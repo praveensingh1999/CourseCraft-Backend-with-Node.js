@@ -1,27 +1,20 @@
-import nodemailer from "nodemailer";
+import Brevo from "@getbrevo/brevo";
 
 export const mailSender = async (email, title, body) => {
-  try {
-    const transporter = nodemailer.createTransport({
-      host: process.env.MAIL_HOST,
-      port: Number(process.env.MAIL_PORT),
-      secure: false,
-      auth: {
-        user: process.env.MAIL_USER, // apikey
-        pass: process.env.MAIL_PASS, // Brevo SMTP key
-      },
-    });
+  const apiInstance = new Brevo.TransactionalEmailsApi();
 
-    const info = await transporter.sendMail({
-      from: `"Course Craft" <${process.env.MAIL_FROM}>`, 
-      to: email,
-      subject: title,
-      html: body,
-    });
+  apiInstance.setApiKey(
+    Brevo.TransactionalEmailsApiApiKeys.apiKey,
+    process.env.BREVO_API_KEY
+  );
 
-    return info;
-  } catch (error) {
-    console.error("MailSender Error:", error);
-    throw error;
-  }
+  await apiInstance.sendTransacEmail({
+    sender: {
+      email: process.env.MAIL_FROM,
+      name: "Course Craft",
+    },
+    to: [{ email }],
+    subject: title,
+    htmlContent: body,
+  });
 };
